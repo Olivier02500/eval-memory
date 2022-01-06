@@ -8,6 +8,11 @@
     height: 100px;
     background-color: #efe8e8;
     cursor: pointer;
+    font-size: 50px;
+    padding-top: 2%;
+    border-radius: 15%;
+    border: 2px solid purple;
+
 }
 
 .card.done {
@@ -22,43 +27,6 @@
     border: 1px solid black;
 }
 
-.red{
-    background-color: red;
-}
-
-.green{
-    background-color: #20a220;
-}
-
-.blue{
-    background-color: #2f2fe7;
-}
-
-.orange{
+.cake {
     background-color: orange;
 }
-
-.black{
-    background-color: black;
-}
-
-.yellow{
-    background-color: #dcdc31;
-}
-
-.cyan{
-    background-color: cyan;
-}
-
-.pink{
-    background-color: pink;
-}
-
-.teal{
-    background-color: teal;
-}
-
-.color-hidden{
-    background-color: #eeeeee;
-}
-

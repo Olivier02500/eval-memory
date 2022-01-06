@@ -9,7 +9,7 @@ function onCardClicked(e) {
     if (  target === clickedCard || target.className.includes('done')) {
         return
     }
-    target.className = target.className.replace('color-hidden', '').trim();
+    target.className = target.className.replace('symbol-hidden', '').trim();
     target.className += ' done';
 
     if (!clickedCard) {
@@ -19,12 +19,12 @@ function onCardClicked(e) {
     else if (clickedCard) {
         //check whits color is a color a previous card
         preventClick = true;
-        if (clickedCard.getAttribute('data-color') === target.getAttribute('data-color')) {
+        if (clickedCard.getAttribute('data-symbol') === target.getAttribute('data-symbol')) {
             preventClick = true;
 
             setTimeout(() =>{
-                clickedCard.className = clickedCard.className.replace('done', '').trim() + ' color-hidden';
-                target.className = target.className.replace('done', '').trim() + ' color-hidden';
+                clickedCard.className = clickedCard.className.replace('done', '').trim() + ' symbol-hidden';
+                target.className = target.className.replace('done', '').trim() + ' symbol-hidden';
                 clickedCard = null;
                 preventClick = false;
                 score++;
